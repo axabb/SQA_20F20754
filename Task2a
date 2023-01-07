@@ -8,7 +8,7 @@ public static void main(String[] args)
 { 
 
 //declaration of number of months and sales sum
-int n
+int n;
 int sum=0;  
 
 Scanner sc=new Scanner(System.in);  
