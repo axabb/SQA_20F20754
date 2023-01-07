@@ -1,0 +1,47 @@
+//scanner class to get user input
+import java.util.Scanner;
+
+public class CalcDisc
+{
+   public static void main(String[] args)
+   {
+      // declaration of variables for the discount amount, total cost, and final amount for customer,
+      float DAmount, CAmount, FAmount;
+      Scanner scan = new Scanner(System.in);
+      
+      System.out.print("Enter the Total Amount of Shopping: ");
+      CAmount = scan.nextFloat();
+      
+      //no discount for shipping less than 150 OMR
+      if(CAmount<=150) 
+      
+      { FAmount = CAmount;}
+      
+      //10% discount for shopping between 150 and 250 OMR
+      else if(totalCost>150 && totalCost<=250
+      {
+         DAmount = (CAmount*10)/100;
+         FAmount = CAmount - DAmount;
+      }
+      //15% discount for shopping between 250 and 350 OMR
+      else if(totalCost>250 && totalCost<=350)
+      {
+         DAmount = (CAmount*15)/100;
+         FAmount = CAmount - DAmount;
+      }
+      //20% discount for shopping between 350 and 450
+      else if(totalCost>350 && totalCost<=450)
+      {
+         DAmount = (CAmount*20)/100;
+         FAmount = CAmount - DAmount;
+      }
+      //30% discount for shopping above 450
+      else
+      {
+         DAmount = (CAmount*30)/100;
+         FAmount = CAmount - DAmount;
+      }
+      //print the final amount payable by customer
+      System.out.println("\nThe cost to be Paid is: " + FAmount);
+   }
+}
