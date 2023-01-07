@@ -12,25 +12,25 @@ public class CalcDisc
       System.out.print("Enter the Total Amount of Shopping: ");
       CAmount = scan.nextFloat();
       
-      //no discount for shipping less than 150 OMR
-      if(CAmount<=150) 
+      //no discount for shipping less than 300 OMR
+      if(CAmount<=300) 
       
       { FAmount = CAmount;}
       
-      //10% discount for shopping between 150 and 250 OMR
-      else if(totalCost>150 && totalCost<=250
+      //10% discount for shopping between 300 and 350 OMR
+      else if(totalCost>300 && totalCost<=350)
       {
          DAmount = (CAmount*10)/100;
          FAmount = CAmount - DAmount;
       }
-      //15% discount for shopping between 250 and 350 OMR
-      else if(totalCost>250 && totalCost<=350)
+      //15% discount for shopping between 350 and 400 OMR
+      else if(totalCost>350 && totalCost<=400)
       {
          DAmount = (CAmount*15)/100;
          FAmount = CAmount - DAmount;
       }
-      //20% discount for shopping between 350 and 450
-      else if(totalCost>350 && totalCost<=450)
+      //20% discount for shopping between 400 and 450
+      else if(totalCost>400 && totalCost<=450)
       {
          DAmount = (CAmount*20)/100;
          FAmount = CAmount - DAmount;
