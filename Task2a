@@ -1,0 +1,42 @@
+//To take input from user
+import java.util.Scanner; 
+
+public class CalcSalesRevenue  
+
+{ 
+public static void main(String[] args)   
+{ 
+
+//declaration of number of months and sales sum
+int n
+int sum=0;  
+
+Scanner sc=new Scanner(System.in);  
+
+//Entering size of array
+System.out.print("Enter the number of months for the revenue: ");  
+
+//reading the number of months entered 
+n=sc.nextInt();  
+
+//an array for n months 
+int[] array = new int[n];
+
+// Entering elements into the array
+System.out.println("Enter the sales for each month: ");  
+
+for(int i=0; i<n; i++)  
+{ //reading monthly sales from the user   
+  array[i]=sc.nextInt(); 
+  
+  //calculating sales for n months
+  sum = sum + array[n];}  
+  
+  //Calculating average monthly sales rate for n months
+  double monthlyrate = sum/n;
+  
+  //Calculating sales revenue for the next 12-n months
+  forecast = monthly rate * (12-n);
+  System.out.println("The sales forecast for the rest of the year is : +forecast");
+}
+}
