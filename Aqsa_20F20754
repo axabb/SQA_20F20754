@@ -17,28 +17,28 @@ public class CalcDisc
       
       { FAmount = CAmount;}
       
-      //10% discount for shopping between 150 and 250 OMR
+      //5% discount for shopping between 150 and 250 OMR
       else if(totalCost>150 && totalCost<=250
+      {
+         DAmount = (CAmount*5)/100;
+         FAmount = CAmount - DAmount;
+      }
+      //10% discount for shopping between 250 and 350 OMR
+      else if(totalCost>250 && totalCost<=350)
       {
          DAmount = (CAmount*10)/100;
          FAmount = CAmount - DAmount;
       }
-      //15% discount for shopping between 250 and 350 OMR
-      else if(totalCost>250 && totalCost<=350)
+      //15% discount for shopping between 350 and 450
+      else if(totalCost>350 && totalCost<=450)
       {
          DAmount = (CAmount*15)/100;
          FAmount = CAmount - DAmount;
       }
-      //20% discount for shopping between 350 and 450
-      else if(totalCost>350 && totalCost<=450)
-      {
-         DAmount = (CAmount*20)/100;
-         FAmount = CAmount - DAmount;
-      }
-      //30% discount for shopping above 450
+      //20% discount for shopping above 450
       else
       {
-         DAmount = (CAmount*30)/100;
+         DAmount = (CAmount*20)/100;
          FAmount = CAmount - DAmount;
       }
       //print the final amount payable by customer
