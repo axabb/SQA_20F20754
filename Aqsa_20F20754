@@ -6,7 +6,6 @@ public class CalcDisc
    public static void main(String[] args)
    {
       // declaration of variables for the discount amount, total cost, and final amount for customer,
-      float DAmount, CAmount, FAmount;
       Scanner scan = new Scanner(System.in);
       
       System.out.print("Enter the Total Amount of Shopping: ");
