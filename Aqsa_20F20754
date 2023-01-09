@@ -5,6 +5,9 @@ public class CalcDisc
 {
    public static void main(String[] args)
    {
+      // declaring variables
+      float CAmount, DAmount, FAmount;
+      
       Scanner scan = new Scanner(System.in);
       
       System.out.print("Enter the Total Amount of Shopping: ");
